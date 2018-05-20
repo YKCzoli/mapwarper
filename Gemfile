@@ -75,7 +75,7 @@ group :development do
    gem 'web-console', '~> 2.0'
    gem 'spring'
    gem 'thin'
-   gem 'capistrano', '~> 3.2.1'
+   gem 'capistrano', '~> 3.4'
    gem 'capistrano-rails',    :require => false
    gem 'capistrano-bundler',  :require => false
    gem 'rvm1-capistrano3',    :require => false

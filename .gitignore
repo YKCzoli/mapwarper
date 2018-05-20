@@ -49,3 +49,5 @@ vendor/bundle
 
 #test files
 test/test_files/*
+
+vendor/cache

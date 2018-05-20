@@ -8,9 +8,9 @@ set :deploy_to, '/srv/dev.mapwarper.net/app/'
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :app, %w{tim@dev.mapwarper.net}
-role :web, %w{tim@dev.mapwarper.net}
-role :db,  %w{tim@dev.mapwarper.net}
+role :app, %w{ec2-user@ec2-54-236-6-115.compute-1.amazonaws.com}
+role :web, %w{ec2-user@ec2-54-236-6-115.compute-1.amazonaws.com}
+role :db,  %w{ec2-user@ec2-54-236-6-115.compute-1.amazonaws.com}
 
 
 # Extended Server Syntax
@@ -19,7 +19,7 @@ role :db,  %w{tim@dev.mapwarper.net}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'dev.mapwarper.net', user: 'tim', roles: %w{web app db}
+server 'ec2-54-236-6-115.compute-1.amazonaws.com', user: 'yuriy', roles: %w{web app db}
 
 
 # Custom SSH Options

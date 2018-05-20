@@ -17,7 +17,7 @@ gem install bundler
 pushd /srv/mapwarper
 
 # do bundle install as a convenience
-sudo -u vagrant -H bundle install 
+sudo -u vagrant -H bundle install --path vendor/cache
 # create user and database for openstreetmap-website
 db_user_exists=`sudo -u postgres psql postgres -tAc "select 1 from pg_roles where rolname='vagrant'"`
 if [ "$db_user_exists" != "1" ]; then
